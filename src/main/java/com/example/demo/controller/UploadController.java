@@ -25,7 +25,7 @@ public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile fil
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Request have no data");
 		}
 		
-		//upload code
+		
 		boolean f=fileUploadHelper.uploadFile(file);
 		if(f)
 		{

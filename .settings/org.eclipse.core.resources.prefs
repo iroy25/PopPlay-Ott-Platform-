@@ -1,5 +1,15 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
 encoding//src/main/resources=UTF-8
+encoding//src/main/webapp/WEB-INF/view/add_product.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/admin_dashboard.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/adminlogin.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/index2.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/login.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/movie1.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/movielistafter.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/signup.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/updatemovie.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/view/view_product.jsp=UTF-8
 encoding//src/test/java=UTF-8
 encoding/<project>=UTF-8

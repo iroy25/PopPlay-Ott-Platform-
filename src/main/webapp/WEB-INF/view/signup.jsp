@@ -1,167 +1,227 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form For User</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Registration Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
- 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #000;
-            color: #fff;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
 
+    body {
+        min-height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.758), rgba(0, 0, 0, 0.903)),
+                    url(images/mcollage.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+    }
 
-        .header {
-            background: linear-gradient(rgba(0, 0, 0, 0.758), rgba(0, 0, 0, 0.903)), url(images/mcollage.png);
-            background-size: cover;
-            background-position: center;
-            padding: 20px 8%;
-        }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 8%;
+        background: transparent;
+    }
 
-        .header nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .logo {
+        cursor: pointer;
+        width: 150px;
+    }
 
-        .header .logo {
-            width: 150px;
-        }
+    nav .nav-btns a button {
+        border: 0;
+        outline: 0;
+        background: #db0001;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
 
-        .header button {
-            background-color: #db0001;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+    nav .nav-btns a button:hover {
+        background: #b30000;
+    }
 
-        form input[type="submit"] {
-    background-color: #db0001;
-    border-radius: 20px;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 100%;
-    transition: background-color 0.3s ease;
-}
+    
+    .form-area {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        min-height: calc(100vh - 80px);
+    }
 
-form input[type="submit"]:hover {
-    background-color: #3a3131;
-}
+    .wrapper {
+        width: 420px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 30px 40px;
+    }
+
+    .wrapper h3 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .wrapper .input-box {
+        width: 100%;
+        height: 50px;
+        background: rgb(233, 230, 235);
+        position: relative;
+        margin: 25px 0;
+        border-radius: 25px;
+    }
+
+    .wrapper .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-radius: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        color: #9b1818;
+        padding: 0 45px 0 20px;
+    }
+
+    .wrapper .input-box input::placeholder {
+        color: #360606;
+    }
+
+    .wrapper .input-box i {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: #9b1818;
+	    cursor: pointer;
+	    z-index: 10;
+    }
+
+    .register-link {
+        font-size: 14.5px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .register-link a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+
+    .center-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .center-button input[type="submit"] {
+        width: 50%;
+        padding: 10px 0;
+        border-radius: 25px;
+        background-color: #ff1900;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s ease;
+    }
+
+    .center-button input[type="submit"]:hover {
+        background-color: #cc1400;
+    }
+
+    .error {
+        color: red;
+        text-align: center;
+    }
     </style>
 </head>
 <body>
 
-   
-    <header class="header">
-        <nav>
-            <img src="images/logo1.png" class="logo" alt="Logo">
-            <button>Log In</button>
-        </nav>
-    </header>
-
-    <section class="vh-100">
     
-        <div class="card text-black" style="background-image: linear-gradient(to right,#362020, #ff7474, #110606)">
-            <div class="card-body p-md-5">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                        <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
-                        <form action="regprocess" method="post" class="mx-1 mx-md-4">
-                            <div class="d-flex flex-row align-items-center mb-4">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="currentColor"
-                                    class="bi bi-person-fill" viewBox="0 0 20 60">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                                </svg>
-                                <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                                <div class="form-outline flex-fill mb-0">
-                                    <label for="validationDefault01" class="form-label">Your Name</label>
-                                    <input type="text" id="validationDefault01" name="uname" class="form-control" value="" required />
-                                </div>
-                            </div>
-
-                            <div class="d-flex flex-row align-items-center mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 20 60">
-                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-                                </svg>
-                                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                                <div class="form-outline flex-fill mb-0">
-                                    <label class="form-label" for="form3Example3c">Your Email</label>
-                                    <input type="email" id="form3Example3c" name="uemail" class="form-control" />
-                                </div>
-                            </div>
-
-                            
-
-                            <div class="d-flex flex-row align-items-center mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="currentColor"
-                                    class="bi bi-telephone-fill" viewBox="0 0 20 60">
-                                    <path fill-rule="evenodd"  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                </svg>
-                                
-                                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                                <div class="form-outline flex-fill mb-0">
-                                    <label class="form-label" for="form3Example3c">Your Mobile Number</label>
-                                    <input type="mobile" id="form3Example3c" name="uphno" class="form-control" />
-
-                                </div>
-                            </div>
-
-                            <div class="d-flex flex-row align-items-center mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="currentColor"  class="bi bi-lock-fill" viewBox="0 0 20 60">
-                                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
-                                </svg>
-                                <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                                <div class="form-outline flex-fill mb-0">
-                                    <label class="form-label" for="form3Example4c">Password</label>
-                                    <input type="password" id="form3Example4c" name="upass" class="form-control" />
-
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row align-items-center mb-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="currentColor"
-                                    class="bi bi-telephone-fill" viewBox="0 0 20 60">
-                                    <path fill-rule="evenodd"  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                </svg>
-
-                                <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                                <div class="form-outline flex-fill mb-0">
-                                    <label class="form-label" for="form3Example3c">Security ques: Your favourite city?</label>
-                                    <input type="text" id="form3Example3c" name="uans" class="form-control" />
-                                </div>
-                            </div>
-
-                           <div>
-                <input type="submit" value="Register">
-            </div>
-                            <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href='login' class="fw-bold text-body"><u>LogIn here</u></a></p>
-                        </form>
-
-                    </div>
-                    
-                </div>
-            </div>
+    <nav>
+        <a href="index"><img src="images/logo1.png" class="logo"></a>
+        <div class="nav-btns">
+            <a href="login"><button>Log In</button></a>
+            <a href="signup"><button>Sign Up</button></a>
         </div>
-</section>
+    </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <div class="form-area">
+        <div class="wrapper">
+            <form action="regprocess" method="post">
+                <h3>Create Account</h3>
+                <p class="error">${msg}</p>
+                <div class="input-box">
+                    <input type="text" placeholder="Your Name" name="uname" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" name="uemail" required>
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder="Mobile Number" name="uphno" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" name="upass" required>
+                    <i class='bx bxs-lock-alt' id="passToggle" onclick="togglePass()" style="cursor:pointer;"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Favourite city? (Security)" name="uans" required>
+                </div>
+                <div class="register-link">
+                    <p>Already have an account? <a href="login">Login here</a></p>
+                </div>
+                <div class="center-button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+<script>
+    function togglePass() {
+        const field = document.getElementById('passField');
+        const icon = document.getElementById('passToggle');
+        if (field.type === 'password') {
+            field.type = 'text';
+            icon.className = 'bx bx-lock-open-alt';
+        } else {
+            field.type = 'password';
+            icon.className = 'bx bxs-lock-alt';
+        }
+    }
+</script>
 </body>
 </html>
+
+<jsp:include page="index_footer.jsp" />
