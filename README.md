@@ -46,7 +46,8 @@ PopPlay is a fully functional OTT (Over-The-Top) streaming platform developed as
 
 
 ## 🖥️ DFD for PopPlay
-<img width="1301" height="928" alt="DFD for ott Project" src="https://github.com/user-attachments/assets/52ec1f84-9eee-4937-9013-a579b4df4961" />
+<img width="1301" height="928" alt="DFD for ott Project" src="https://github.com/user-attachments/assets/4c0b769b-f9f5-4064-995c-2ddd25021d31" />
+
 
 
 ---
