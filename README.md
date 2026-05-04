@@ -69,23 +69,30 @@ PopPlay is a fully functional OTT (Over-The-Top) streaming platform developed as
 
 | Page | Preview |
 |---|---|
-| Home / Landing | <img width="1920" height="1080" alt="Screenshot 2026-05-04 165210" src="https://github.com/user-attachments/assets/ef25e9ae-676d-4502-9317-4d6e76777ef5">
- <img width="1920" height="1080" alt="Screenshot 2026-05-04 165217" src="https://github.com/user-attachments/assets/86a0deb3-5fdf-4607-9306-662019de728a" /> 
-<img width="1920" height="1080" alt="Screenshot 2026-05-04 165233" src="https://github.com/user-attachments/assets/1936f28a-36c1-4eea-ba23-4767cbbef3ab" />
-<img width="1920" height="1080" alt="Screenshot 2026-05-04 165229" src="https://github.com/user-attachments/assets/bca946cd-a90b-4bb9-8baf-80a4a953a2b7" />
-<img width="1920" height="1080" alt="Screenshot 2026-05-04 165224" src="https://github.com/user-attachments/assets/cb1fa168-792b-4d65-bc6d-e62c6fa2d476" /> |
-| User Login | <img width="1920" height="1080" alt="Screenshot 2026-05-04 165241" src="https://github.com/user-attachments/assets/6df5fb23-8167-4dae-9056-6c364a254f11" />|
-| UserRegistration | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005355" src="https://github.com/user-attachments/assets/a1ccbc02-0d7b-479c-aadc-61f616c9a72b" />|
-| Logged-in Homepage | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005506" src="https://github.com/user-attachments/assets/5a994c4f-b76d-4bae-b84a-089a40c6216c" /> 
-<img width="1920" height="1080" alt="Screenshot 2026-05-05 005500" src="https://github.com/user-attachments/assets/b350f7d9-06b1-4217-b63e-2c32a30b5c54" />
-<img width="1920" height="1080" alt="Screenshot 2026-05-05 005455" src="https://github.com/user-attachments/assets/8515c41e-0b27-4a4d-9510-f4a6f3048af8" />
-<img width="1920" height="1080" alt="Screenshot 2026-05-05 005448" src="https://github.com/user-attachments/assets/76bc97f2-61dc-40fe-a049-67cb71b879c6" /> |
-| Movie List | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005513" src="https://github.com/user-attachments/assets/18da7dbf-6aac-4dd9-ae3e-7bd2b4cadef0" /> |
-| Admin Login Page | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005716" src="https://github.com/user-attachments/assets/db880530-2252-49bb-94fb-4553131c3c70" />|
-| Admin Dashboard | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005729" src="https://github.com/user-attachments/assets/b2fea81f-cd2c-4885-8278-2c953636708e" /> |
-| Add Movie | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005736" src="https://github.com/user-attachments/assets/418f6cc3-e170-444d-9a48-6dd0195f0f8d" /> |
-| View Movie List | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005749" src="https://github.com/user-attachments/assets/5498f49a-f8aa-479b-9103-767075ce5666" /> |
- | View User List |<img width="1920" height="1080" alt="Screenshot 2026-05-05 005759" src="https://github.com/user-attachments/assets/2ba904db-c217-4f10-b859-aaca20900d92" /> |
+| Home / Landing | <img width="1920" height="1080" alt="Screenshot 2026-05-04 165210" src="https://github.com/user-attachments/assets/a40dad13-b9ed-45b3-86dc-a8b8bb90e380" />
+<img width="1920" height="1080" alt="Screenshot 2026-05-04 165217" src="https://github.com/user-attachments/assets/1d4c55b1-df4c-4cde-9181-c91520434e1a" />
+<img width="1920" height="1080" alt="Screenshot 2026-05-04 165224" src="https://github.com/user-attachments/assets/5269a90f-257c-4d4e-b233-06c2bd09265f" />
+<img width="1920" height="1080" alt="Screenshot 2026-05-04 165229" src="https://github.com/user-attachments/assets/c94a6333-acf9-4c19-8e11-65ed2cc2171c" /> <img width="1920" height="1080" alt="Screenshot 2026-05-04 165233" src="https://github.com/user-attachments/assets/51dbf8d2-481b-41a6-b522-2a0eec4955b9" />
+|
+| User Login Form| <img width="1920" height="1080" alt="Screenshot 2026-05-04 165241" src="https://github.com/user-attachments/assets/35803b9d-68fa-4455-a1d9-d63c3e7ae43c" />
+  |
+| User Registration Form|  <img width="1920" height="1080" alt="Screenshot 2026-05-05 005355" src="https://github.com/user-attachments/assets/0a89e005-f118-4ac2-879b-e2670a10cc3d" />
+|
+| Logged-in Homepage |  <img width="1920" height="1080" alt="Screenshot 2026-05-05 005448" src="https://github.com/user-attachments/assets/700e8cde-135c-4a68-8cea-4fde142663ba" />
+<img width="1920" height="1080" alt="Screenshot 2026-05-05 005455" src="https://github.com/user-attachments/assets/bd1db826-62db-4f03-8152-abf4a26569e9" />
+<img width="1920" height="1080" alt="Screenshot 2026-05-05 005506" src="https://github.com/user-attachments/assets/e866ea97-e351-4350-b8d1-213959c37bcd" />  |
+| Movie List | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005513" src="https://github.com/user-attachments/assets/10782d3e-2d05-48ba-9d6e-9a3d914ff369" /> <img width="1920" height="1080" alt="Screenshot 2026-05-05 005534" src="https://github.com/user-attachments/assets/e4e99ca0-67c4-49ba-84cd-285550844700" />
+|
+| Admin Login Page |<img width="1920" height="1080" alt="Screenshot 2026-05-05 005716" src="https://github.com/user-attachments/assets/9f9a0714-dcd9-46fa-8064-f7b64aaa02dd" />
+ |
+| Admin Dashboard | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005729" src="https://github.com/user-attachments/assets/fc3f33bd-da28-4ff5-9945-0376e912b204" />
+  |
+| Add Movie |   <img width="1920" height="1080" alt="Screenshot 2026-05-05 005743" src="https://github.com/user-attachments/assets/2a493fea-d245-4844-94c6-b797b746d520" />
+|
+| View Movie List |   <img width="1920" height="1080" alt="Screenshot 2026-05-05 005749" src="https://github.com/user-attachments/assets/c910a6e3-e568-4e34-b769-015006ddc016" />
+|
+ | View User List | <img width="1920" height="1080" alt="Screenshot 2026-05-05 005759" src="https://github.com/user-attachments/assets/635f8d57-dde4-4de3-9467-6436cd7fcefe" />
+ |
  
  
 ---
