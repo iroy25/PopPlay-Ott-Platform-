@@ -95,17 +95,3 @@ PopPlay is a fully functional OTT (Over-The-Top) streaming platform developed as
  |
  
  
----
-
-
-
-## 📄 License
-
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-
-<div align="center">
-Made with ❤️ and ☕ &nbsp;|&nbsp; <b>PopPlay</b> — Stream Anything, Anytime.
-</div>
